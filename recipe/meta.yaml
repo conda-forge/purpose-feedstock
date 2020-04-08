@@ -1,5 +1,5 @@
 {% set name = "purpose" %}
-{% set version = "5.67.0" %}
+{% set version = "5.68.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/purpose-{{ version }}.tar.xz
-  sha256: 31c5c486a4a299c9eb1a809af899d5ab7ed9c56b81aca2b9f7aa142e9bed0ebb
+  sha256: c8c8f8244b568e52b4c02b89b71611bb8ba7cd07173645caa022b4bd90b41ab0
 
 build:
   number: 0
@@ -49,7 +49,7 @@ about:
   license: LGPL-v2.1-or-later
   license_family: GPL
   license_file: COPYING.LIB
-  summary: 'Offers available actions for a specific purpose'
+  summary: Offers available actions for a specific purpose
   description: |
     This framework offers the possibility to create integrate services
     and actions on any application without having to implement them
