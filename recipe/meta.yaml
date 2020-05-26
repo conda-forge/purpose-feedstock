@@ -1,5 +1,5 @@
 {% set name = "purpose" %}
-{% set version = "5.69.0" %}
+{% set version = "5.70.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/purpose-{{ version }}.tar.xz
-  sha256: 4d863106ae877dc9aad4d66dffe88cb9912a546208d07f5023009809e37e734b
+  sha256: 50bd8f33e06a7217f32d68c15a54b11b3c8dac41c421cd75d45f10f9a0e8b4df
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
-    - extra-cmake-modules
+    - extra-cmake-modules >={{ major_minor }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
@@ -32,13 +32,13 @@ requirements:
     - xorg-libxfixes  # [linux]
     - xorg-libxext
     - qt
-    - kirigami2
-    - kio
-    - ki18n
-    - kconfig
+    - kirigami2 >={{ major_minor }}
+    - kio >={{ major_minor }}
+    - ki18n >={{ major_minor }}
+    - kconfig >={{ major_minor }}
     #- kaccounts (optional, for youtube only)
-    - kcoreaddons
-    - knotifications
+    - kcoreaddons >={{ major_minor }}
+    - knotifications >={{ major_minor }}
 
 test:
   commands:
