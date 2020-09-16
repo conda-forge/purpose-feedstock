@@ -46,9 +46,11 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/purpose/html/index.html
-  license: LGPL-v2.1-or-later
-  license_family: GPL
-  license_file: COPYING.LIB
+  license: GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.1-or-later
+  license_file:
+    - LICENSES/GPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.1-or-later.txt
   summary: Offers available actions for a specific purpose
   description: |
     This framework offers the possibility to create integrate services
