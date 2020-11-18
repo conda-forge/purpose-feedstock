@@ -3,11 +3,13 @@ About purpose
 
 Home: https://api.kde.org/frameworks/purpose/html/index.html
 
-Package license: LGPL-v2.1-or-later
+Package license: GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.1-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/purpose-feedstock/blob/master/LICENSE.txt)
 
 Summary: Offers available actions for a specific purpose
+
+Development: https://cgit.kde.org/purpose.git/tree
 
 This framework offers the possibility to create integrate services
 and actions on any application without having to implement them
