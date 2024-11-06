@@ -1,5 +1,5 @@
 {% set name = "purpose" %}
-{% set version = "5.76.0" %}
+{% set version = "6.0.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/purpose-{{ version }}.tar.xz
-  sha256: fd0edb0e7ba8b5336436848fe2452ff98c1b5bf2c49ea7744a8c0038d4e8887d
+  sha256: 4fa85cbd2d9dd49216eda6433b43e05bbb114249dac51df55242328f7eb8f97c
 
 build:
   number: 0
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - cmake
     - make
